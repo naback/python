@@ -5,7 +5,7 @@ def train():
 
 def execute():
 	while 1:
-		question = input("Eu: ")
+		question = input("Me: ")
 		response = chatbot.get_response(question)
 		print("Ron: ", response)
 
