@@ -21,7 +21,7 @@ def script():
 		train()
 
 	else:
-		print("Invalid option!")
+		print("Invalid option!\n")
 		script()
 
 
