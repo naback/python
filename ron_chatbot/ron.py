@@ -9,19 +9,28 @@ def execute():
 		response = chatbot.get_response(question)
 		print("Ron: ", response)
 
+def script():
+	print ("1 - Execute");
+	print ("9 - Train");
+	op = input()
+
+	if op == '1':
+		execute()
+
+	elif op == '9':
+		train()
+
+	else:
+		print("Invalid option!")
+		script()
+
+
+#====================================================================================================
+
+
 chatbot = ChatBot(
     'Ron',
     trainer='chatterbot.trainers.ChatterBotCorpusTrainer'
 )
 
-print ("1 - Execute");
-print ("9 - Train");
-op = input()
-
-if op == '1':
-	execute()
-
-if op == '9':
-	train()
-
-
+script()
